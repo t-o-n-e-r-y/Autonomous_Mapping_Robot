@@ -1,0 +1,6 @@
+camsense_x1_node:
+  ros__parameters:
+    port: "/dev/ttyUSB1"
+    baudrate: 115200
+    frame_id: "lidar_link"
+    angle_offset: -100.0
