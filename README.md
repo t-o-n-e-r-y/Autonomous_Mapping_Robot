@@ -1,42 +1,38 @@
 # Autonomous Mapping Robot
 
-This repository contains the source code and configuration files for an autonomous mapping robot project.
+This repository contains the source code and configuration files for an **Autonomous Mapping Robot** project built with **ROS 2 Jazzy**.
 
-To use it, you need to know little knowledge about ROS to code and run it
+The project supports both simulation and real robot execution. It includes robot description files, launch files, control configuration, LiDAR-based perception, mapping, path planning, and visualization tools.
+
+## Features
+
+- ROS 2 based autonomous mobile robot system
+- Gazebo simulation support
+- Real robot launch configuration
+- LiDAR-based perception
+- Autonomous mapping
+- Path planning
+- Robot visualization with RViz2
+- ROS 2 control integration
 
 ## Requirements
-Ubuntu 24.04
-ROS 2 Jazzy
-Gazebo
-RViz2
 
+This project is developed and tested with:
+
+- Ubuntu 24.04
+- ROS 2 Jazzy
+- Gazebo
+- RViz2
+- Python 3
+
+Install the required ROS 2 packages:
+
+```bash
+sudo apt update
 sudo apt install ros-jazzy-sensor-msgs
 sudo apt install ros-jazzy-urdf-tutorial
 sudo apt install ros-jazzy-tf2-tools
 sudo apt install ros-jazzy-xacro
-sudo apt-get install ros-jazzy-rqt-image-view
+sudo apt install ros-jazzy-rqt-image-view
 sudo apt install ros-jazzy-ros2-control ros-jazzy-ros2-controllers
 sudo apt install ros-jazzy-rclcpp-lifecycle
-
-## Features
-
-- ROS 2 based robot system
-- Autonomous mapping
-- Path planning
-- Lidar-based perception
-- Robot simulation and visualization
-
-Gazebo(simulation): This is all source code for you can simulate the vehicle in your computer (no need real hardware)
-you just need to 
-
-
-## How to run
-
-colcon build
-source install/setup.bash
-
-Simulation:
-ros2 launch my_robot_description my_robot.launch.xml 
-
-Real:
-ros2 launch real_car_description my_robot.launch.xml 
