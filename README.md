@@ -36,7 +36,7 @@ sudo apt install ros-jazzy-xacro
 sudo apt install ros-jazzy-rqt-image-view
 sudo apt install ros-jazzy-ros2-control ros-jazzy-ros2-controllers
 sudo apt install ros-jazzy-rclcpp-lifecycle
-
+```
 
 
 
