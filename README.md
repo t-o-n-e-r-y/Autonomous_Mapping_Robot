@@ -6,6 +6,7 @@ The project supports both simulation and real robot execution. It includes robot
 
 ![Autonomous Mapping Robot](image/RobotURDF.png)
 
+
 ## Features
 
 - ROS 2 based autonomous mobile robot system
@@ -63,7 +64,12 @@ ros2 launch my_robot_description my_robot.launch.xml
 
 The simulation package allows you to test the robot on your computer without real hardware.
 
+![Simulation](image/simulation.png)
+
 ### Real Robot
+
+![Real Robot](PCB/PCB.png)
+![Real Robot](image/Robot.png)
 
 To run the real robot system:
 
@@ -73,7 +79,10 @@ ros2 launch real_car_description my_robot.launch.xml
 
 Make sure the required hardware, sensors, motor controller, and serial connections are properly configured before launching the real robot.
 
-
+This project uses two serial ports in the configuration file: 
+1: /dev/ttyUSB0 for esp32 
+2: /dev/ttyUSB1 for LiDar
+(Be careful to check the correct port)
 
 ## Notes
 
@@ -85,3 +94,9 @@ Before running the project, make sure you have sourced both ROS 2 and the worksp
 source /opt/ros/jazzy/setup.bash
 source install/setup.bash
 ```
+
+This source code is still under development and not fully optimized. However, it can run and provide a basic understanding of how to build a robot system that can create a map using ROS 2, LiDAR, Gazebo, and RViz2.
+
+
+
+You can watch the robot running demo on my YouTube channel
