@@ -36,3 +36,48 @@ sudo apt install ros-jazzy-xacro
 sudo apt install ros-jazzy-rqt-image-view
 sudo apt install ros-jazzy-ros2-control ros-jazzy-ros2-controllers
 sudo apt install ros-jazzy-rclcpp-lifecycle
+
+
+## Build
+
+From the workspace root directory, run:
+
+```bash
+colcon build
+source install/setup.bash
+```
+
+## How to Run
+
+### Simulation
+
+To run the robot in Gazebo simulation:
+
+```bash
+ros2 launch my_robot_description my_robot.launch.xml
+```
+
+The simulation package allows you to test the robot on your computer without real hardware.
+
+### Real Robot
+
+To run the real robot system:
+
+```bash
+ros2 launch real_car_description my_robot.launch.xml
+```
+
+Make sure the required hardware, sensors, motor controller, and serial connections are properly configured before launching the real robot.
+
+
+
+## Notes
+
+Basic knowledge of ROS 2 is recommended to build, modify, and run this project.
+
+Before running the project, make sure you have sourced both ROS 2 and the workspace:
+
+```bash
+source /opt/ros/jazzy/setup.bash
+source install/setup.bash
+```
