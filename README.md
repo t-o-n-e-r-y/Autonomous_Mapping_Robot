@@ -81,7 +81,8 @@ Make sure the required hardware, sensors, motor controller, and serial connectio
 
 This project uses two serial ports in the configuration file: 
 
-1: /dev/ttyUSB0 for esp32 
+1: /dev/ttyUSB0 for esp32
+
 2: /dev/ttyUSB1 for LiDar
 (Be careful to check the correct port)
 
