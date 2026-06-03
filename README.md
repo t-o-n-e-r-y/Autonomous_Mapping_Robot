@@ -4,6 +4,8 @@ This repository contains the source code and configuration files for an **Autono
 
 The project supports both simulation and real robot execution. It includes robot description files, launch files, control configuration, LiDAR-based perception, mapping, path planning, and visualization tools.
 
+![Autonomous Mapping Robot](image/RobotURDF.png)
+
 ## Features
 
 - ROS 2 based autonomous mobile robot system
